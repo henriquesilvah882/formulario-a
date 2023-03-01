@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+background-color: #06269b !important;
+font-family: 'Oswald', sans-serif;
+flex-direction: column;
+
+}
+
+.navbar{
+
+background-color: #04128a;
+height: 15vh;
+
+
+}
+
+
+.Formulário{
+
+box-sizing: border-box;
+background: #EEB902;
+border: 3px solid #FFFFFF;
+border-radius: 29px;
+height: 615px;
+float: right;
+margin-right: 37%;
+margin-top: 10%;
+width: 400px;
+  
+
+}
+
+
+
+
+#CamposFormulario{
+
+margin-top: 4vh;
+margin-left: 20px;
+
+
+}
+
+
+label{
+
+font-family: 'URW';
+font-style: normal;
+font-size: 15px;
+color: #06269B;
+    
+    
+}
+
+input{
+
+color: #FFFFFF;
+text-align: center;
+font-family: 'Oswald', sans-serif;
+display: block;
+
+}
+
+select{
+
+color: #FFFFFF;
+text-align: center;
+font-family: 'Oswald', sans-serif;
+
+}
+
+h4{
+font-family: 'Oswald', sans-serif;
+font-style: normal;
+font-size: 10px;
+}
+
+#NomeCompleto{
+
+box-sizing: border-box;
+width: 350px;
+height: 37px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+font-family: 'Oswald', sans-serif;
+   
+
+
+}
+
+#Telefone{
+
+box-sizing: border-box;
+width: 350px;
+height: 37px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+font-family: 'Oswald', sans-serif;
+
+}
+
+#DateNascimento{
+
+box-sizing: border-box;
+width: 165px;
+height: 37px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+margin-top: -1px;
+font-family: 'Oswald', sans-serif;
+}
+
+#Sexo{
+
+box-sizing: border-box;
+width: 150px;
+height: 37px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+font-family: 'Oswald', sans-serif;
+float: left;
+margin-left: 200px;
+margin-top: -62px;
+    
+
+}
+
+#Estado{
+
+box-sizing: border-box;
+width: 166px;
+height: 37px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+margin-top: 10px;
+font-family: 'Oswald', sans-serif;
+float: left;
+margin-top: -15px;
+}
+
+#Cidade{
+
+box-sizing: border-box;
+width: 145px;
+height: 37px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+font-family: 'Oswald', sans-serif;
+float: left;
+margin-left: 39px;
+margin-top: -15px;
+
+}
+
+
+#email{
+
+box-sizing: border-box;
+width: 349px;
+height: 37px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+margin-top: 15px;
+font-family: 'Oswald', sans-serif;
+float: left;
+margin-left: -350px;
+margin-top: 55px;
+}
+
+#senha{
+
+box-sizing: border-box;
+width: 140px;
+height: 37px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+font-family: 'Oswald', sans-serif;
+float: left;
+margin-top: 55px;
+margin-left: -140px;
+
+
+}
+
+#btnFinalizarCadastro{
+
+box-sizing: border-box;
+position: absolute;
+width: 204px;
+height: 39px;
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+color: #FFFFFF;
+font-family: 'Oswald', sans-serif;
+    
+
+}
+
+.termos{
+
+font-size: 20px;
+margin-top: 130px;
+text-align: center;
+color: #06269B;
+margin-left: -20px;
+
+
+}
+
+
+.sexo{
+
+float: left;
+margin-left: 202px;
+margin-top: -60px;
+
+}
+
+.estado{
+
+float: left;
+margin-top: -40px;
+
+
+}
+
+.cidade{
+
+
+float: left;
+margin-top: -40px;
+margin-left: 40px;
+
+}
+
+
+.emailt{
+
+float: left;
+margin-top: 30px;
+margin-left: -350px;
+
+}
+
+
+#btnFinalizarCadastro{
+
+float: left;
+margin-left: 75px;
+margin-top: 2.1vh;
+
+
+
+}
+
+
+.tituloDOform h4{
+
+color: #06269B;
+font-size: 20px;
+text-align: center;
+margin-top: 5vh;
+margin-right: 2vh;
+
+}
+
+.aceiteTermos{
+
+margin-left: 7vh;
+margin-top: 7px;
+text-align: center;
+font-size: 13px;
+
+}
+
+#checkbox{
+
+margin-top: -2vh; 
+margin-left: 5vh;
+
+}
+
+label{
+
+font-family: 'Oswald', sans-serif;
+
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 999px){
+
+    .logotipoImagem{
+
+    margin-left: 34%;
+    margin-top: -6vh;
+        
+    
+    }
+    
+    .imagemPromocao{
+    
+    margin-top: -5px;
+    margin-right: 90px;
+    width: auto;
+    height: auto;
+    margin-inline: 5px;
+    
+    
+    }
+    
+    .tituloDOform h4{
+    
+    color: #06269B;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 7vh;
+    
+    
+    }
+
+
+#checkbox{
+
+margin-top: -3vh; 
+margin-left: 8vh;
+
+}
+
+.aceiteTermos{
+
+ margin-left: 65px;
+ margin-top: 2px;
+
+}
+
+#btnFinalizarCadastro{
+
+margin-top: 3vh;
+
+
+}
+
+.Formulário{
+
+height: 620px;
+margin-right: 25%;
+
+
+
+}
+
+
+.TituloTexto1{
+
+margin-top: 16vh;
+    
+}
+
+
+.CamposFormulario{
+
+margin-top: 5vh;
+
+
+}
+    
+    
+}
+
+@media (min-width: 1000px) and (max-width: 2560px){
+
+.Formulário{
+
+margin-right: 37%;
+
+
+}
+
+
+
+}
