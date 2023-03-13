@@ -4,132 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promoção</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-    </style>
-
+    <link rel="icon" type="image/png" href="assets/img/logotipo.png">
+    <title>Show de Pêmios</title>
 </head>
+
 <body>
+    <div class="container">
 
-    <main>
-      
-      <div class="Formulário">
-
-        <div class="tituloDOform">
-              
-          <h4>CADASTRE-SE</h4>
-
+        <div class="img-formulário">
+            <div>
+                <p>A CADA 50 REAIS EM COMPRAS CONCORRA A PÊMIOS INCRÍVEIS.</p>
+                <img src="assets/img/prêmio.png" alt="" width="750" height="750">
+            </div>
         </div>
+        <div class="form" id="form">
 
-        <form action="" id="CamposFormulario" method="post">
+            <form action="#">
 
+                <div class="form-header">
+                    <div class="titulo">
+                        <h1>CADASTRE-SE E CONCORRA</h1>
+                    </div>
+                    <div class="login-button">
+                        <button class="button-entrar"><a class="button-texto" href="#">Entrar</a></button>
+                    </div>
+                </div>
 
-            <label class="NomeCompleto" for="NomeCompleto">Nome Completo</label>
-            <input type="text" name="NomeCompleto" id="NomeCompleto">
+                <div class="grupo-input">
 
-            <label class="Telefone" for="Telefone">Telefone Com DDD</label>
-            <input type="tel" name="tel" id="Telefone">
+                    <div class="input-box">
+                        <label for="NomeCompleto">Nome</label>
+                        <input  id="NomeCompleto" type="text" name="NomeCompleto" placeholder="Digite seu nome completo" required>
+                    </div>
 
-            <label class="DateNascimento" for="DateNascimento" for="DateNascimento">Data de Nascimento</label>
-            <input type="date" name="DateNascimento" id="DateNascimento">
+                    <div class="input-box">
+                        <label for="CPF">CPF</label>
+                        <input  id="CPF" type="number" name="CPF" placeholder="Digite o seu CPF" required>
+                    </div>
 
-            <label class="sexo" for="sexo">Sexo</label><br>
-            <select name="Sexo" id="Sexo">
+                    <div class="input-box">
+                        <label for="Profissao">Profissão</label>
+                        <input  id="Profissao" type="text" name="Profissao" placeholder="Digite a sua profissão" required>
+                    </div>
 
-                <option value="escolha"></option>
-                <option value="mas">Masculino</option>
-                <option value="Fem">Feminino</option>
-                <option value="">Outros</option>
+                    <div class="input-box">
+                        <label for="Telefone">Telefone</label>
+                        <input  id="Telefone" type="number" name="Telefone" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
 
-            </select><br>
+                    <div class="input-box">
+                        <label for="Data_nascimento">Data de Nascimento</label>
+                        <input  id="Data_nascimento" type="date" name="Data_nascimento" required>
+                    </div>
 
-            <label class="estado" for="Estado">Estado</label>
-            <select name="Estado" id="Estado">
+                    <div class="input-box">
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo">
+                            <option value="">Sexo</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
 
-                        <option value=""></option>
-                        <option value="Acre">AC</option>
-                        <option value="Alagoas">AL</option>
-                        <option value="Amapá">AP</option>
-                        <option value="Amazonas">AM</option>
-                        <option value="Bahia">BA</option>
-                        <option value="Ceará">CE</option>
-                        <option value="Distrito Federal">DF</option>
-                        <option value="Espírito Santo">ES</option>
-                        <option value="Goiás">GO</option>
-                        <option value="Maranhão">MA</option>
-                        <option value="Mato Grosso">MT</option>
-                        <option value="Mato Grosso do Sul">MS</option>
-                        <option value="Minas Gerais">MG</option>
-                        <option value="Pará">PA</option>
-                        <option value="Paraíba">PB</option>
-                        <option value="Paraná">PR</option>
-                        <option value="Pernambuco">PE</option>
-                        <option value="Piauí">PI</option>
-                        <option value="Rio de Janeiro">RJ</option>
-                        <option value="Rio Grande do Norte">RN</option>
-                        <option value="Rio Grande do Sul">RS</option>
-                        <option value="Rondônia">RO</option>
-                        <option value="Roraima">RR</option>
-                        <option value="Santa Catarina">SC</option>
-                        <option value="São Paulo">SP</option>
-                        <option value="Sergipe">SE</option>
-                        <option value="Tocantins">TO</option>
+                    <div class="input-box">
+                        <label for="Estado">Estado?</label>
+                        <select name="Estado" id="Estado">
+                            <option value="">Estado</option>
+                            <option value="Acre">AC</option>
+                            <option value="Alagoas">AL</option>
+                            <option value="Amapá">AP</option>
+                            <option value="Amazonas">AM</option>
+                            <option value="Bahia">BA</option>
+                            <option value="Ceará">CE</option>
+                            <option value="Distrito Federal">DF</option>
+                            <option value="Espírito Santo">ES</option>
+                            <option value="Goiás">GO</option>
+                            <option value="Maranhão">MA</option>
+                            <option value="Mato Grosso">MT</option>
+                            <option value="Mato Grosso do Sul">MS</option>
+                            <option value="Minas Gerais">MG</option>
+                            <option value="Pará">PA</option>
+                            <option value="Paraíba">PB</option>
+                            <option value="Paraná">PR</option>
+                            <option value="Pernambuco">PE</option>
+                            <option value="Piauí">PI</option>
+                            <option value="Rio de Janeiro">RJ</option>
+                            <option value="Rio Grande do Norte">RN</option>
+                            <option value="Rio Grande do Sul">RS</option>
+                            <option value="Rondônia">RO</option>
+                            <option value="Roraima">RR</option>
+                            <option value="Santa Catarina">SC</option>
+                            <option value="São Paulo">SP</option>
+                            <option value="Sergipe">SE</option>
+                            <option value="Tocantins">TO</option>
+                        </select>
+                    </div>
 
-            </select>
+                    <div class="input-box">
+                        <label class="cidade" for="Cidade">Cidade?</label>
+                        <select name="Cidade" id="Cidade">
+                            <option value="">Cidade</option>
+                            <option value="">Rio Branco</option>
+                            <option value="">Maceió</option>
+                            <option value="">Macapá</option>
+                            <option value="">Manaus</option>
+                            <option value="">Salvador</option>
+                            <option value="">Fortaleza</option>
+                            <option value="">Brasília </option>
+                            <option value="">Vitória</option>
+                            <option value="">Goiânia</option>
+                            <option value="">São Luís</option>
+                            <option value="">Cuiabá</option>
+                            <option value=""> Campo Grande</option>
+                            <option value="">Belo Horizonte</option>
+                            <option value="">Belém</option>
+                            <option value="">João Pessoa</option>
+                            <option value="">Curitiba</option>
+                            <option value="">Recife</option>
+                            <option value="">Teresina</option>
+                            <option value="">Rio de Janeiro</option>
+                            <option value="">Natal</option>
+                            <option value="">Porto Alegre</option>
+                            <option value="">Porto Velho</option>
+                            <option value="">Boa Vista</option>
+                            <option value=""> Florianópolis</option>
+                            <option value="">São Paulo</option>
+                            <option value="">Aracaju</option>
+                            <option value="">Palmas</option>
+                        </select>
+                    </div>
 
-            <label class="cidade" for="Cidade">Cidade</label>
-            <select name="Cidade" id="Cidade">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input  id="email" type="email" name="email" placeholder="Digite um e-mail válido" required>
+                    </div>
 
-                        <option value=""></option>
-                        <option value="">Rio Branco</option>
-                        <option value="">Maceió</option>
-                        <option value="">Macapá</option>
-                        <option value="">Manaus</option>
-                        <option value="">Salvador</option>
-                        <option value="">Fortaleza</option>
-                        <option value="">Brasília </option>
-                        <option value="">Vitória</option>
-                        <option value="">Goiânia</option>
-                        <option value="">São Luís</option>
-                        <option value="">Cuiabá</option>
-                        <option value=""> Campo Grande</option>
-                        <option value="">Belo Horizonte</option>
-                        <option value="">Belém</option>
-                        <option value="">João Pessoa</option>
-                        <option value="">Curitiba</option>
-                        <option value="">Recife</option>
-                        <option value="">Teresina</option>
-                        <option value="">Rio de Janeiro</option>
-                        <option value="">Natal</option>
-                        <option value="">Porto Alegre</option>
-                        <option value="">Porto Velho</option>
-                        <option value="">Boa Vista</option>
-                        <option value=""> Florianópolis</option>
-                        <option value="">São Paulo</option>
-                        <option value="">Aracaju</option>
-                        <option value="">Palmas</option>
+                    <div class="input-box">
+                        <label for="password">Crie sua senha</label>
+                        <input  id="password" type="password" name="password" placeholder="Crie sua senha" required>
+                    </div>
 
-            </select>
+                    <div class="input-box">
+                        <label for="Confirme_password">Confirme sua senha</label>
+                        <input  id="Confirme_password" type="password" name="Confirme_password" placeholder="Confirme sua senha" required>
+                    </div>
+                    
+                    <div class="input-termos">
 
+                        <div class="Termos_titulo">
+                            <h5>Aceite os termos de participação</h5>
+                        </div>
 
-            <label class="emailt" for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+                        <div class="termos_grupo">
+                            <input type="checkbox" id="cupons_fiscais">
+                            <label for="cupons_fiscais">Estou ciente que preciso guardar os cupons fiscais.</label>
+                        </div>
 
-            <h4 class="termos">Aceite o Termo</h4>
+                        <div class="termos_grupo">
+                            <input type="checkbox" id="Confirmacao_regulamento">
+                            <label for="Confirmacao_regulamento">Li e concordo com o regulamento da promoção.</label>
+                        </div>
+                    </div>
 
-            <label class="aceiteTermos">Li e concordo com o regulamento da promoção.</label>
-            <input type="checkbox" name="check" id="checkbox">
-
-            <input type="submit" onclick="validar()" value="Finalizar Cadastro" id="btnFinalizarCadastro">
-
-        </form>
-
-      </main>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
-        <script src="assets/index.js"></script>
-      </body>
+                    <div class="button_cadastrar">
+                        <button><a href="#">Finalizar Cadastro</a></button>
+                    </div>
+                </div>    
+            </form>
+        </div>
+    </div>
+</body>
 </html>
