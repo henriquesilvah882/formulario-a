@@ -1,398 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
 
-}
-
-body{
-
-background-color: #06269b !important;
-font-family: 'Oswald', sans-serif;
-flex-direction: column;
-
-}
-
-.navbar{
-
-background-color: #04128a;
-height: 15vh;
-
-
-}
-
-
-.Formulário{
-
+padding: 0;
+margin: 0;
 box-sizing: border-box;
+font-family: 'Oswald';
+
+}
+
+body {
+
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #04128A;
+
+}
+
+.container {
+
+width: 80%;
+height: 80vh;
+display: flex;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+
+}
+
+.img-formulário{
+
+width: 50%;
+display: flex;
+justify-content: center;
+background-color: #06269B;
+
+
+}
+
+.form-header{
+
+margin-bottom: 3rem;
+display: flex;
+justify-content: space-between;
+
+}
+
+.login-button{
+
+display: flex;
+align-items: center;
+
+}
+
+.button-entrar {
+
+background: #EEB902;
+border: 3px solid #FFFFFF;
+border-radius: 70.5px;
+width: 6rem;
+height: 2.5rem;
+margin-left: 9rem;
+margin-top: 1rem;
+
+
+}
+
+.button-texto{
+
+font-family: 'Oswald';
+text-decoration: none;
+font-size: 19px;
+text-align: center;
+
+
+}
+
+.grupo-input{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 3rem;
 background: #EEB902;
 border: 3px solid #FFFFFF;
 border-radius: 29px;
-height: 615px;
-float: right;
-margin-right: 37%;
-margin-top: 10%;
-width: 400px;
-  
+width: 31rem;
+height: 40rem;
 
-}
-
-
-
-
-#CamposFormulario{
-
-margin-top: 4vh;
-margin-left: 20px;
 
 
 }
 
+form{
 
-label{
+margin-left: 10rem;
 
-font-family: 'URW';
-font-style: normal;
-font-size: 15px;
-color: #06269B;
-    
     
 }
 
-input{
+.input-box{
 
-color: #FFFFFF;
-text-align: center;
-font-family: 'Oswald', sans-serif;
-display: block;
-
-}
-
-select{
-
-color: #FFFFFF;
-text-align: center;
-font-family: 'Oswald', sans-serif;
+display: flex;
+flex-direction: column;
+margin-bottom: 1.3rem;
+margin-top: -1rem;
 
 }
 
-h4{
-font-family: 'Oswald', sans-serif;
-font-style: normal;
-font-size: 10px;
+.input-box input{
+
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
+width: -50rem;
+height: 2.5rem;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+.input-box input:focus-visible{
+
+outline: 1px solid #FFFFFF;
+
+}
+
+.input-box select:focus-visible{
+
+outline: 1px solid #FFFFFF;
+
+}
+
+::placeholder{
+
+color: #FFFFFF;
+
 }
 
 #NomeCompleto{
 
-box-sizing: border-box;
-width: 350px;
-height: 37px;
-background: #06269B;
-border: 3px solid #FFFFFF;
-border-radius: 47px;
-font-family: 'Oswald', sans-serif;
-   
+width: 24.5rem;
 
+}
+
+#CPF{
+
+width: 11.5rem ;
+
+}
+
+#Profissao{
+
+width: 11.4rem;
+margin-right: 0em;
 
 }
 
 #Telefone{
 
-box-sizing: border-box;
-width: 350px;
-height: 37px;
-background: #06269B;
-border: 3px solid #FFFFFF;
-border-radius: 47px;
-font-family: 'Oswald', sans-serif;
+width: 11.5rem ;
 
 }
 
-#DateNascimento{
+#Data_nascimento{
 
-box-sizing: border-box;
-width: 165px;
-height: 37px;
-background: #06269B;
-border: 3px solid #FFFFFF;
-border-radius: 47px;
-margin-top: -1px;
-font-family: 'Oswald', sans-serif;
+width: 11.4rem;
+margin-right: 0em;
+
 }
 
-#Sexo{
+.input-box select{
 
-box-sizing: border-box;
-width: 150px;
-height: 37px;
 background: #06269B;
 border: 3px solid #FFFFFF;
 border-radius: 47px;
-font-family: 'Oswald', sans-serif;
-float: left;
-margin-left: 200px;
-margin-top: -62px;
-    
+width: -50rem;
+height: 2.5rem;
+text-align: center;
+color: #FFFFFF;
+
+
+}
+
+#sexo{
+
+width: 7rem ;
 
 }
 
 #Estado{
 
-box-sizing: border-box;
-width: 166px;
-height: 37px;
-background: #06269B;
-border: 3px solid #FFFFFF;
-border-radius: 47px;
-margin-top: 10px;
-font-family: 'Oswald', sans-serif;
-float: left;
-margin-top: -15px;
+width: 7rem;
+margin-right: -1rem;
+
 }
 
 #Cidade{
 
-box-sizing: border-box;
-width: 145px;
-height: 37px;
-background: #06269B;
-border: 3px solid #FFFFFF;
-border-radius: 47px;
-font-family: 'Oswald', sans-serif;
-float: left;
-margin-left: 39px;
-margin-top: -15px;
+width: 7rem ;
+margin-left: 1rem;
+
 
 }
 
 
 #email{
 
-box-sizing: border-box;
-width: 349px;
-height: 37px;
-background: #06269B;
-border: 3px solid #FFFFFF;
-border-radius: 47px;
-margin-top: 15px;
-font-family: 'Oswald', sans-serif;
-float: left;
-margin-left: -350px;
-margin-top: 55px;
+width: 24.5rem;
+margin-right: -1rem;
+
 }
 
-#senha{
 
-box-sizing: border-box;
-width: 140px;
-height: 37px;
-background: #06269B;
-border: 3px solid #FFFFFF;
-border-radius: 47px;
-font-family: 'Oswald', sans-serif;
-float: left;
-margin-top: 55px;
-margin-left: -140px;
+.Termos_titulo{
+
+text-align: center;
+margin-left: 4rem;
+font-size: 20px;
+margin-top: 0rem;
+margin-bottom: 1rem;
+color: #06269B;
 
 
 }
 
-#btnFinalizarCadastro{
 
-box-sizing: border-box;
-position: absolute;
+#password{
+
+width: 11.5rem ;
+
+}
+
+#Confirme_password{
+
+width: 11.4rem;
+margin-right: 0em;
+
+}
+
+.button_cadastrar button{
+
+background: #06269B;
+border: 3px solid #FFFFFF;
+border-radius: 47px;
 width: 204px;
 height: 39px;
-background: #06269B;
-border: 3px solid #FFFFFF;
-border-radius: 47px;
+margin-top: 1.5rem;
+display: flexbox;
+margin-left: 6rem;
+
+
+
+}
+
+.button_cadastrar a{
+
+font-size: 14px;
+text-decoration: none;
 color: #FFFFFF;
-font-family: 'Oswald', sans-serif;
-    
 
 }
 
-.termos{
+.form-header .titulo h1{
 
-font-size: 20px;
-margin-top: 130px;
+font-size: 1.3rem;
+color: #FFFFFF;
+margin-top: 1.5rem;
+margin-left: 0.4rem;
+
+
+}
+
+.img-formulário p{
+
+color: #FFFFFF;
+display: flex;
+font-size: 2rem;
 text-align: center;
-color: #06269B;
-margin-left: -20px;
-
+margin-top: 4rem;
 
 }
 
+.img-formulário img{
 
-.sexo{
-
-float: left;
-margin-left: 202px;
-margin-top: -60px;
-
-}
-
-.estado{
-
-float: left;
-margin-top: -40px;
-
-
-}
-
-.cidade{
-
-
-float: left;
-margin-top: -40px;
-margin-left: 40px;
-
-}
-
-
-.emailt{
-
-float: left;
-margin-top: 30px;
-margin-left: -350px;
-
-}
-
-
-#btnFinalizarCadastro{
-
-float: left;
-margin-left: 75px;
-margin-top: 2.1vh;
-
-
-
-}
-
-
-.tituloDOform h4{
-
-color: #06269B;
-font-size: 20px;
-text-align: center;
-margin-top: 5vh;
-margin-right: 2vh;
-
-}
-
-.aceiteTermos{
-
-margin-left: 7vh;
-margin-top: 7px;
-text-align: center;
-font-size: 13px;
-
-}
-
-#checkbox{
-
-margin-top: -2vh; 
-margin-left: 5vh;
+margin-top: -6rem;
 
 }
 
 label{
 
-font-family: 'Oswald', sans-serif;
-
-
-}
-
-
-
-@media (min-width: 320px) and (max-width: 999px){
-
-    .logotipoImagem{
-
-    margin-left: 34%;
-    margin-top: -6vh;
-        
-    
-    }
-    
-    .imagemPromocao{
-    
-    margin-top: -5px;
-    margin-right: 90px;
-    width: auto;
-    height: auto;
-    margin-inline: 5px;
-    
-    
-    }
-    
-    .tituloDOform h4{
-    
-    color: #06269B;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 7vh;
-    
-    
-    }
-
-
-#checkbox{
-
-margin-top: -3vh; 
-margin-left: 8vh;
-
-}
-
-.aceiteTermos{
-
- margin-left: 65px;
- margin-top: 2px;
-
-}
-
-#btnFinalizarCadastro{
-
-margin-top: 3vh;
-
-
-}
-
-.Formulário{
-
-height: 620px;
-margin-right: 25%;
-
-
-
-}
-
-
-.TituloTexto1{
-
-margin-top: 16vh;
-    
-}
-
-
-.CamposFormulario{
-
-margin-top: 5vh;
-
-
-}
-    
-    
-}
-
-@media (min-width: 1000px) and (max-width: 2560px){
-
-.Formulário{
-
-margin-right: 37%;
-
-
-}
-
-
+color: #06269B;
 
 }
